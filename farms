@@ -1,0 +1,25 @@
+a poultry farm has group of hens and cows...
+need to find no of cows & hens separtly if total legs total heads together given 
+test case 1: legs:16
+             heads:6
+             cows:2
+             hens:4
+testcase2: legs:7
+           heads:3
+           o/p no solm
+   code:
+heads =int(input("Enter heads: "))
+legs =int(input("Enter legs: "))
+flag = False
+for c in range(heads + 1):
+    h = heads - c
+    c_l = 4 * c + 2 * h
+    if c_l == legs:
+        flag = True
+        break
+if flag:
+    print("cows:", c)
+    print("hens:", h)
+else:
+    print("No solution")
+
