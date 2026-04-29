@@ -1,0 +1,35 @@
+a=" Ilove India"
+e=a.find("love")
+print(e)
+
+
+a="i"
+e=a.isalpha()
+print(e)
+
+a="2"
+e=a.isdigit()
+print(e)
+
+a="2"
+e=a.isalnum()
+print(e)
+
+a="tvvk is good and mass and cool"
+e=a.split("and")
+print(e)
+
+
+a="tvvk is FROM chennai and innocent"
+e=" ".join(i for i in a if i in "aeiou")
+print(e)
+
+
+a="tvvk is FROM chennai and innocent"
+e="navzz ".join("cute" for i in a if i in "aeiou")
+print(e)
+
+
+a="fyfkuyfvjgliygil"
+b=sorted(a,reverse=True)
+print(b)
